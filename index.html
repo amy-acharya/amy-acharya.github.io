@@ -1,11 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
-    </head>
-    <body>
-        <p>hello, world</p>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="Amrita Acharya — computer science and statistics student focused on AI, computational biology, and biomedical informatics.">
+  <title>Amrita Acharya | AI &amp; Computational Biology</title>
+  <style>
+    :root{--ink:#182522;--muted:#66746f;--paper:#f6f4ef;--card:#fffefa;--green:#176b58;--mint:#dcece4;--line:#dce2dc;--blue:#416b8a;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#0d4539}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}.hero{padding:26px 0 78px;background:radial-gradient(ellipse at 82% 10%,#dcece4 0,transparent 36%),var(--paper)}.topbar{display:flex;justify-content:space-between;align-items:center;padding:7px 0 56px}.brand{font-weight:750;letter-spacing:.03em;color:var(--ink);text-decoration:none}.nav{display:flex;gap:22px;flex-wrap:wrap}.nav a{font-size:.86rem;color:var(--muted);text-decoration:none}.nav a:hover{color:var(--green)}.eyebrow{font-size:.76rem;font-weight:750;letter-spacing:.17em;text-transform:uppercase;color:var(--green)}h1,h2,h3,p{margin-top:0}h1{font:clamp(3.2rem,8vw,6.5rem)/.98 var(--serif);letter-spacing:-.055em;margin:18px 0 20px;max-width:850px}.hero p{font-size:1.12rem;color:#43524c;max-width:760px}.hero .intro{font-size:1.02rem;color:var(--muted);max-width:810px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;padding:10px 17px;border-radius:999px;background:var(--green);color:white;text-decoration:none;font-size:.9rem;font-weight:650}.button.secondary{background:transparent;color:var(--green);border:1px solid #9db7ac}.layout{display:grid;grid-template-columns:210px 1fr;gap:56px;padding:0 0 80px}.side{position:sticky;top:24px;align-self:start;padding-top:14px}.side p{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}.side nav{display:grid;gap:9px}.side a{font-size:.91rem;text-decoration:none;color:#53635d}.content{min-width:0}.section{padding:30px 0 36px;border-bottom:1px solid var(--line);scroll-margin-top:24px}.section:first-child{padding-top:0}.section h2{font:clamp(1.8rem,3vw,2.5rem)/1.1 var(--serif);letter-spacing:-.03em;margin-bottom:20px}.section-lead{color:var(--muted);max-width:760px}.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.skill{padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:12px}.skill h3{font-size:.93rem;margin-bottom:7px;color:var(--green)}.skill p{margin:0;color:#45534e;font-size:.91rem}.timeline{display:grid;gap:0}.item{padding:0 0 24px 20px;border-left:2px solid #c7d9d0;position:relative}.item:last-child{padding-bottom:0}.item:before{content:'';position:absolute;left:-7px;top:8px;width:11px;height:11px;background:var(--green);border-radius:50%}.item h3{font-size:1.03rem;line-height:1.4;margin:0 0 3px}.meta{color:var(--muted);font-size:.87rem;margin-bottom:8px}.item p{font-size:.94rem;color:#44534d;margin:0}.honor{padding:18px 20px;background:var(--mint);border-radius:12px}.projects{display:grid;gap:12px}.project{padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px}.project h3{font-size:1rem;line-height:1.45;margin-bottom:5px}.project p{font-size:.92rem;color:#4b5953;margin:0}.entries{display:grid;gap:16px}.entry{margin:0}.entry p{margin:0 0 4px}.entry .detail{color:var(--muted);font-size:.91rem}.entry em{font-family:var(--serif)}.links{display:flex;gap:10px;flex-wrap:wrap}.links a{padding:8px 13px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--card);font-size:.9rem}.footer{padding:25px 0 40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+    @media(max-width:760px){.topbar{align-items:flex-start;gap:20px;flex-direction:column;padding-bottom:44px}.layout{grid-template-columns:1fr;gap:20px}.side{position:static;padding:12px 0 0}.side p{margin-bottom:8px}.side nav{display:flex;gap:8px 16px;flex-wrap:wrap}.side a{font-size:.82rem}.skills{grid-template-columns:1fr}.hero{padding-bottom:54px}}
+    @media print{body{background:#fff}.hero{padding-bottom:25px}.topbar,.side,.hero-actions{display:none}.layout{display:block}.section{break-inside:avoid}.project,.skill{background:#fff}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="topbar"><a class="brand" href="#top">AMRITA ACHARYA</a><nav class="nav" aria-label="Primary navigation"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#publications">Publications</a></nav></div>
+      <div id="top" class="eyebrow">Computer Science · Statistics · Computational Biology</div>
+      <h1>Building at the intersection of data and biology.</h1>
+      <p>Driven Columbia Engineering student focused on artificial intelligence, data science, computational biology, biomedical informatics, and machine learning for genomics.</p>
+      <p class="intro">Bringing together software engineering, statistical modeling, and biomedical research to work on genetic sequencing, protein modeling, disease diagnostics, drug discovery, and personalized medicine. Equally enthusiastic about core AI/ML, data science, and scalable software engineering.</p>
+      <div class="hero-actions"><a class="button" href="#experience">Explore experience</a><a class="button secondary" href="#links">Find me online</a></div>
+    </div>
+  </header>
+  <main class="wrap layout">
+    <aside class="side"><p>On this page</p><nav aria-label="Section navigation"><a href="#skills">Technical skills</a><a href="#experience">Experience</a><a href="#honors">Honors</a><a href="#projects">Projects</a><a href="#seminars">Seminars</a><a href="#publications">Publications</a><a href="#blogs">Blogs</a><a href="#links">Links</a></nav></aside>
+    <div class="content">
+      <section class="section" id="skills"><h2>Technical skills</h2><div class="skills">
+        <article class="skill"><h3>Programming</h3><p>Python, R, Java, SQL, C, JavaScript, HTML/CSS, Linux/Bash</p></article>
+        <article class="skill"><h3>Development tools</h3><p>Git/GitHub, GitHub Copilot, VS Code, Jupyter Notebook, AWS, Docker</p></article>
+        <article class="skill"><h3>Data science &amp; engineering</h3><p>Statistical modeling, machine learning (ML), deep learning (DL), data visualization, Pandas, NumPy, Streamlit, Scikit-Learn, PyTorch</p></article>
+        <article class="skill"><h3>Bioinformatics tools</h3><p>BEDTools, SAMTools, Bowtie, Bioconductor, Galaxy, BLAST</p></article>
+        <article class="skill"><h3>Genomic analysis</h3><p>High-throughput sequencing data analysis, RNA-seq, variant calling, single-cell analysis, pipeline development, multi-omics</p></article>
+      </div></section>
+      <section class="section" id="experience"><h2>Experience</h2><div class="timeline">
+        <article class="item"><h3>SEAS Teaching Assistant</h3><div class="meta">CS Department, Columbia Engineering · Sept 2025–May 2026; Sept 2026–Present</div><p>Teaching assistant for Data Structures in Java and Advanced Programming.</p></article>
+        <article class="item"><h3>Summer Intern, Biostatistics &amp; Computational Biology</h3><div class="meta">National Institutes of Health · RTP, NC · May–Aug 2026</div><p>Use single-cell RNA-sequencing profiles to characterize intratumoral cellular heterogeneity and infer drug-responsive phenotypes. Tools: Python, R, R Shiny.</p></article>
+        <article class="item"><h3>Summer Enhancement Fellowship Research, Columbia Undergraduate Scholars Program (CUSP)</h3><div class="meta">May–Aug 2025</div><p>Computational analysis of mechanisms underlying interactions (binding energy) between transcription factors and DNA using bioinformatics tools (BEDTools, SAMTools, Bowtie) and PyProBound (PyTorch).</p></article>
+        <article class="item"><h3>Research Intern, Bioinformatics &amp; Computational Biology</h3><div class="meta">UNC Chapel Hill, NC · Jan 2023–Apr 2025</div><p>Computational analysis of epigenomic modifications due to chronic stress on breast cancer. Tools: Python, R, SQL.</p></article>
+        <article class="item"><h3>Research Intern, Computational Biology &amp; Bioinformatics</h3><div class="meta">Duke University, Durham, NC · Jun 2023–May 2024</div><p>Analyzed candidate genes and pathways in NTD patients; conducted a proteomics study on surgery patients before and after operation; analyzed sickle cell disease patients’ epigenetic ages using multiple methylation aging clocks. Tools: Python, R.</p></article>
+        <article class="item"><h3>Research Scholar</h3><div class="meta">CCIR Academy (Cambridge Center for International Research) · Aug–Dec 2022</div><p>Analyzed the role of PIK3CA amplification in breast cancer.</p></article>
+      </div></section>
+      <section class="section" id="honors"><h2>Honors</h2><div class="honor">Inducted member of Tau Beta Pi (Engineering) and Upsilon Pi Epsilon (Computing and Information Disciplines).</div></section>
+      <section class="section" id="projects"><h2>Selected projects</h2><div class="projects">
+        <article class="project"><h3><a href="https://github.com/amy-acharya/aml-final-project">Fold or Fail: Predicting Protein Stability Changes from Mutations</a></h3><p><strong>Applied Machine Learning Final Project.</strong> Analyzes whether graph neural networks on protein residue contact graphs improve prediction of mutation-induced protein stability changes, measured as ΔΔG, beyond tabular baselines. Python.</p></article>
+        <article class="project"><h3><a href="https://github.com/amy-acharya/linear-algebra-project">Modeling regulation of the marRAB operon in Escherichia coli using Markov models</a></h3><p><strong>Linear Algebra Final Project.</strong> Explores marRAB operon regulatory dynamics using Hidden Markov Models to infer transcriptional states and characterize transitions.</p></article>
+        <article class="project"><h3><a href="https://github.com/isabellalazarov/methyl-hmm">Predicting Gene Expression with Methylation-GEX Relationships Across Promoter Regions with an HMM</a></h3><p><strong>Computational Genomics Final Project.</strong> Examines the relationship between methylation levels and gene expression, and how an HMM learns this relationship when predicting gene expression.</p></article>
+        <article class="project"><h3><a href="https://github.com/amy-acharya/bioinformatics-utilities">GDC Data Analyzer for BRCA</a></h3><p><strong>For epigenomic research.</strong> Python bioinformatics tool using the GDC Data Portal to download TCGA-BRCA data and store it in an SQL database.</p></article>
+        <article class="project"><h3><a href="https://github.com/amy-acharya/cirrus-weather">CIRRUS Weather App</a></h3><p><strong>For global warming and climate studies.</strong> Developed for the 2021 Congressional App Challenge using Python, SQL, HTML, CSS, and JavaScript.</p></article>
+      </div></section>
+      <section class="section" id="seminars"><h2>Seminars</h2><div class="entries">
+        <p class="entry">Amrita Acharya, “Epigenetic Changes due to Stress on Breast Cancer,” <span class="detail">Dec 19, 2023 · Zannas Lab, UNC School of Medicine</span>.</p>
+        <p class="entry">Amrita Acharya, “Cancer Bioinformatics: Big Data Analysis for Cancer Research,” <span class="detail">March 23, 2023 · YWIB virtual seminar</span>.</p>
+      </div></section>
+      <section class="section" id="publications"><h2>Publications</h2><div class="entries">
+        <p class="entry">Amrita Acharya. “Defeating Dijkstra's Algorithm: Behind New Improvements in Graph Algorithms.” <em>Columbia Science Review</em>. <span class="detail">November 2025.</span><br><a href="http://www.thecolumbiasciencereview.com/online-articles/defeating-dijkstras-algorithm-behind-new-improvements-in-graph-algorithms">Read article</a></p>
+        <p class="entry">Amrita Acharya, Anthony Zannas, PhD, MD. “Cell-Derived Epigenomic Markers of Chronic Stress Distinguish Breast Cancer Phenotypes.” <em>Yale Journal of Biology and Medicine</em>. <span class="detail">June 2025.</span> DOI: <a href="https://doi.org/10.59249/yyqn6894">10.59249/YYQN6894</a></p>
+        <p class="entry">Amrita Acharya. “Causes of Schizophrenia: The Intricate Interplay between Genes and the Environment.” <em>Columbia Science Review</em>. <span class="detail">May 2025.</span><br><a href="http://www.thecolumbiasciencereview.com/uploads/1/2/6/7/126759457/all_pages_spring_2025.pdf">Read publication (PDF)</a></p>
+      </div></section>
+      <section class="section" id="blogs"><h2>Blogs</h2><div class="entries">
+        <p class="entry"><a href="https://www.thecolumbiasciencereview.com/online-articles/a-timeline-of-policy-changes-in-the-fda">A Timeline of Policy Changes in the FDA</a><br><span class="detail">Columbia Science Review · Sept 2026</span></p>
+        <p class="entry"><a href="https://medium.com/@amy.acharya.01/molecular-tumor-board-precision-oncology-4aa47a27bc7e">Molecular Tumor Board &amp; Precision Oncology</a><br><span class="detail">Medium · Jul 2023</span></p>
+      </div></section>
+      <section class="section" id="links"><h2>Connect</h2><div class="links"><a href="https://github.com/amy-acharya">GitHub ↗</a><a href="https://www.linkedin.com/in/amy-acharya/">LinkedIn ↗</a><a href="https://scholar.google.com/citations?hl=en&amp;user=GVafljcAAAAJ">Google Scholar ↗</a><a href="https://medium.com/@amy.acharya.01">Medium ↗</a></div></section>
+    </div>
+  </main>
+  <footer class="wrap footer">Amrita Acharya · Computer Science, Statistics &amp; Computational Biology</footer>
+</body>
 </html>
